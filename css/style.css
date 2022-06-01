@@ -14,6 +14,7 @@ header{
     background-color: #FF6800;
     height: 70px;
     position: fixed;
+    z-index: 9999;
     width: 100%;
 }
 
@@ -39,6 +40,57 @@ header, #genere, #logo, #header-icon{
 /* fine stile sezione header*/
 
 
+/* inizio stile sezione main*/
 main{
-    padding-top: 140px;
+    padding-top: 100px;
 }
+
+#shopping-section{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: calc(95% / 3);
+    margin: 20px 10px;
+    position: relative;
+}
+
+.product-img{
+    width: 100%;
+}
+
+.product .hover{
+    display: none;
+}
+
+.heart{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    padding: 10px;
+    background-color: white;
+}
+
+.discount>*{
+    color: white;
+    font-size: 14px;
+    padding: 2px 5px;
+    position: relative;
+    display: inline;
+    left: 0px;
+    bottom: 60px;
+}
+
+.discount .sconto{
+    background-color: red;
+}
+
+.discount .green{
+    background-color: green;
+}
+
+/* fine stile sezione main*/
