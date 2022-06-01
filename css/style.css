@@ -3,3 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* inizio stile sezione header*/
+header{
+    color: white;
+    background-color: #FF6800;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+}
+
+#header-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#logo img{
+    height: 30px;
+}
+
+header, #genere, #logo, #header-icon{
+    display: flex;
+    align-items: center;
+}
+
+#genere span, #header-icon i{
+    padding: 0px 10px;
+}
+/* fine stile sezione header*/
+
+
+main{
+    padding-top: 140px;
+}
