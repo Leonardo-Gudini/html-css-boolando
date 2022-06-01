@@ -46,7 +46,7 @@ main{
 }
 
 #shopping-section{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -54,7 +54,7 @@ main{
 }
 
 .product{
-    width: calc(95% / 3);
+    width: calc(90% / 3);
     margin: 20px 10px;
     position: relative;
 }
@@ -77,6 +77,26 @@ main{
     display: none;
 }
 
+figcaption .brand{
+    font-weight: 200;
+}
+
+figcaption .name{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.price {
+    color: red;
+    font-weight: 600;
+}
+
+.price .crossed{
+    color: black;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
 .heart{
     position: absolute;
     top: 20px;
@@ -92,7 +112,7 @@ main{
     position: relative;
     display: inline;
     left: 0px;
-    bottom: 60px;
+    bottom: 130px;
 }
 
 .discount .sconto{
@@ -104,3 +124,41 @@ main{
 }
 
 /* fine stile sezione main*/
+
+/*inizio stile sezione footer*/
+
+footer{
+    color: white;
+    background-color: #1A1A1A;
+    height: 70px;
+}
+
+#footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer, #company, #footer-icon{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#company span, #footer-icon i{
+    padding-right: 10px;
+}
+
+#company div, #footer-icon div{
+    padding: 2px 0px;
+    font-size: 12px;
+}
+
+#company>div:first-of-type{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*fine stile sezione footer*/
