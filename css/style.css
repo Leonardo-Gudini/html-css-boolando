@@ -63,7 +63,7 @@ main{
     display: none;
 }
 
-.product:hover .product-img.hover, .product:hover .heart{
+.product:hover .product-img.hover, .heart:hover{
     display: block;
     color: red;
 }
