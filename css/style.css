@@ -8,6 +8,11 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* inizio stile sezione header*/
 header{
     color: white;
@@ -34,8 +39,9 @@ header, #genere, #logo, #header-icon{
     align-items: center;
 }
 
-#genere span, #header-icon i{
+#genere span, #header-icon a{
     padding: 0px 10px;
+    margin-right: 5px;
 }
 /* fine stile sezione header*/
 
@@ -57,8 +63,18 @@ main{
     width: calc(90% / 3);
     margin: 20px 10px;
     position: relative;
+    cursor: pointer;
 }
 
+.heart{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* inizio hover immagini e cuore*/
 .product:hover .product-img{
     display: none;
 }
@@ -67,6 +83,7 @@ main{
     display: block;
     color: red;
 }
+/* fine hover immagini e cuore*/
 
 .product-img{
     width: 100%;
@@ -95,14 +112,6 @@ figcaption .name{
     color: black;
     font-weight: 400;
     text-decoration: line-through;
-}
-
-.heart{
-    position: absolute;
-    top: 20px;
-    right: 0px;
-    padding: 10px;
-    background-color: white;
 }
 
 .discount>*{
@@ -148,7 +157,7 @@ footer, #company, #footer-icon{
 }
 
 #company span, #footer-icon i{
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 #company div, #footer-icon div{
