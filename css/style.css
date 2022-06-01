@@ -59,9 +59,19 @@ main{
     position: relative;
 }
 
+.product:hover .product-img{
+    display: none;
+}
+
+.product:hover .product-img.hover, .product:hover .heart{
+    display: block;
+    color: red;
+}
+
 .product-img{
     width: 100%;
 }
+
 
 .product .hover{
     display: none;
